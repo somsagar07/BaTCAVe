@@ -22,7 +22,7 @@ class BayesianLogisticRegression(LinearClassifierMixin, BaseEstimator):
         self.tol = tol
         self.fit_intercept = fit_intercept
         self.verbose = verbose
-        print("Rans: BayesianLogisticRegression initializing")
+        print("BayesianLogisticRegression initializing")
 
     def fit(self, X, y):
         '''
@@ -40,7 +40,7 @@ class BayesianLogisticRegression(LinearClassifierMixin, BaseEstimator):
         self: object
            self
         '''
-        print("Rans: BayesianLogisticRegression fiting")
+        print("BayesianLogisticRegression fiting")
         # preprocess data
         X, y = check_X_y(X, y, dtype=np.float64)
         check_classification_targets(y)
@@ -94,7 +94,7 @@ class BayesianLogisticRegression(LinearClassifierMixin, BaseEstimator):
         probs: numpy array of size [n_samples_test]
            Estimated probabilities of target classes
         '''
-        print("Rans: BayesianLogisticRegression predicting probs")
+        print("BayesianLogisticRegression predicting probs")
         # exit()
         # construct separating hyperplane
         scores = self.decision_function(X)
@@ -343,7 +343,7 @@ class VBLogisticRegression(BayesianLogisticRegression):
         '''
         Fits single classifier for each class (for OVR framework)
         '''
-        print("Rans: VBLogisticRegression Fitting...")
+        print("VBLogisticRegression Fitting...")
         eps = 1
         n_samples, n_features = X.shape
         XY = np.dot(X.T, (y - 0.5))
@@ -401,7 +401,7 @@ class VBLogisticRegression(BayesianLogisticRegression):
         Finds gaussian approximation to posterior of coefficients using
         local variational approximation of Jaakola & Jordan
         '''
-        print("Rans: VBLogisticRegression Eval Post Distri...")
+        print("VBLogisticRegression Eval Post Distri...")
         sigma_inv = 2 * np.dot(X.T * l, X)
         alpha_vec = np.ones(X.shape[1]) * float(a) / b
         if self.fit_intercept:
