@@ -193,7 +193,7 @@ def train_bcav(
 
         # Addition for BTCAV
         weights = weights.cpu().detach().numpy()
-        print("classifier", weights[0,:].shape, classifier.lm.coef_.shape, len(classifier.lm.sigma_), classifier.lm.sigma_[0].shape)
+        # print("classifier", weights[0,:].shape, classifier.lm.coef_.shape, len(classifier.lm.sigma_), classifier.lm.sigma_[0].shape)
         weights_samples = np.empty((weights.shape[0], weights.shape[1], n_samples))
         for i in range(len(classifier.lm.sigma_)): 
             weights_samples[i,:,:] = np.random.multivariate_normal(weights[i,:], classifier.lm.sigma_[i], n_samples).T
