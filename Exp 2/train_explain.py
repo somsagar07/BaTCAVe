@@ -383,7 +383,7 @@ from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 from captum.concept._utils.classifier import Classifier
 import shutil
-from btcav.BayesianLogistic import VBLogisticRegression
+from batcave.BayesianLogistic import VBLogisticRegression
 
 class CustomClassifier(Classifier):
     def __init__(self):

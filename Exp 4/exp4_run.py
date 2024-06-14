@@ -18,7 +18,7 @@ from captum.concept._utils.classifier import Classifier
 from sklearn.linear_model import SGDClassifier
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
-from BayesianLogistic import VBLogisticRegression
+from batcave.BayesianLogistic import VBLogisticRegression
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import CheckpointCallback
 # import gym

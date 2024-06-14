@@ -31,7 +31,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import IterableDataset, DataLoader
 
 from captum.concept._utils.common import concepts_to_str
-from btcav.BayesianLogistic import VBLogisticRegression
+from batcave.BayesianLogistic import VBLogisticRegression
 from captum.concept import TCAV, BTCAV
 from matplotlib.gridspec import GridSpec
 import os, shutil
