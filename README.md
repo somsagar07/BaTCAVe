@@ -1,6 +1,5 @@
 # BaTCAVe
 
-
 ## Structure
 This project is organized into the following directories:
 - `utils/`: Contains the important library code to be replaced by the user.
@@ -21,7 +20,3 @@ pip install -r requirements.txt
 The library code to be replaced by the user is located in the `utils/` directory. The user should replace the code in the `utils/` directory as explained below.
 - `utils/tcav.py`: Replace the `tcav.py` in your `<your_venv>/lib/python/site-packages/captum/concept/_core` folder with this file.
 - `utils/__init__.py` : Replace the `__init__.py` in your `<your_venv>/lib/python/site-packages/captum/concept` folder with this file.
-
-
-## Note
-Since the pretrained models were too large to share in supplementary we have skipped those for now, but will be making them available later in private repo.
