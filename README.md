@@ -1,5 +1,8 @@
 # BaTCAVe
 
+![The explainability pipeline. The user obtains a score with uncertainty for each "concept."](Figs/Figure1.jpg)
+
+
 ## Structure
 This project is organized into the following directories:
 - `utils/`: Contains the important library code to be replaced by the user.
