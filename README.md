@@ -1,6 +1,11 @@
 # BaTCAVe
 
-![The explainability pipeline. The user obtains a score with uncertainty for each "concept."](Figs/Figure1.jpg)
+<p align="center">
+  <img src="Figs/Figure1.jpg" alt="Image Description"/>
+  <br>
+  <em>The explainability pipeline. The user obtains a score with uncertainty for each "concept.</em>
+</p>
+
 
 
 ## Structure
